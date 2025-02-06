@@ -1,0 +1,35 @@
+body{
+    background-color: #777;
+}
+.contenedor{
+    border: 2px solid black;
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    position: relative; /*CON ESTA PROPIEDAD EL PUNTO DE REFERENCIA CAMBIA A CAJA CONTENEDOR*/
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: #999;
+    z-index: 10;
+}
+.box--blue{
+    background-color: blue;
+    position: absolute;/*CON ESTA PROPIEDAD EL PUNTO DE REFERENCIA ES EL HTML  */
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.box--green{
+    background-color: green;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 10;
+}

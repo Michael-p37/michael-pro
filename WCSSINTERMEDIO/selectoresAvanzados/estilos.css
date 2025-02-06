@@ -1,0 +1,19 @@
+/*SELCTOR POR ATIBUTO*/
+img[src="image.png"]{
+    width: 100%;
+}
+/*SELETOR POR HIJO DIRECTO*/
+li > em{
+    color: red;
+}
+/*SELECTORES DE HERMANO ADYACENTE */
+h1 + p {
+    color: green;
+}
+/*SELECTOR DE HERMANOS GENERALES*/
+h2 ~ p {
+    color: yellowgreen;
+}
+li ~ li {
+    color: blue;
+}

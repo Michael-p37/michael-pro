@@ -1,0 +1,70 @@
+h1{
+    color: #4e8;
+    font-family: sans-serif;
+    margin: 30px;
+}
+/*CUANDO PASAMOS EL RATON POR ENCIMA DE H1*/
+h1:hover{
+    background-color: #ccc;
+    color: #333;
+}
+/*MIENTRAS ESTE CLIQUEANDO H1*/
+h1:active{
+    background-color: #999;
+    color: #fff;
+}
+/*SELECCIONAR EL PRIMER ELEMENTO*/
+li:first-child{
+    color: blue;
+}
+/*SELECCIONAR EL SEGUNDO ELEMENTO*//*(2n) uno si uno no, uno si uno no*/
+LI:nth-child(4){
+    color: rgb(20, 231, 20);
+}
+
+/*SELECCIONAR EL ULTIMO ELEMENTO*/
+li:last-child{
+    color: red;    
+}
+/*SELECCIONANDO LOS LI DENTRO DE ".LISTA" PERO QUE NO TENGAN LA 
+CLASE "EXCLUIR" */
+.lista li:not(.excluir){
+    color:green;
+}
+div{
+    border: 1px solid black;
+/*SELECCIONANDO EL DIV EN CASO DE ESTAR VACIO*/
+}
+div:empty{
+    border: none;
+}
+input[type="checkbox"]{
+    margin: 50px
+}
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+/*SELECCIONANDO ENLASES NO VISITADOS*/
+a:link{
+    color: red;
+}
+/*SELECCIONANDO ENLACES VISITADOS*/
+a:visited{
+    color: green;
+}
+/*USANDO LOS CLASES IS  is cambia la especifidad */
+section:is(.elementosS, .elemento6, .elemento7){
+    color: red;
+}
+/*USO DEL ELEMENTO HAS si el elemento "elementosS" se encuentra
+en "section" selecciona todo el section*/
+section:has(.elementosS){
+    background-color: green;
+}
+/*VALIDAR UN EMAIL*/
+label:has(input:valid), input:valid{
+    color: green;
+}
+label:has(input:invalid), input:invalid{
+    color: red;
+}

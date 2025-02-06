@@ -1,0 +1,23 @@
+body{
+    background-color: #888;
+}
+.lista{
+    border: 1px solid black;
+}
+.lista__item{
+    color: blue;
+    margin: 10px 0;
+    list-style: square;
+}
+/* CLASES MODIFICADORES*/
+.item--danino{
+    color: red;
+}
+.item--necesario{
+    color: blue;
+}
+/*MODIFICA UN BLOQUE*/
+.lista--modificada{
+    opacity: 0.5;
+    background-color: #ccc;
+}
