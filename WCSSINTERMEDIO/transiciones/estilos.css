@@ -1,8 +1,10 @@
 body{
     background-color: black;
+    text-align: center;
+    margin: 80px;
 }
 .box{
-    height: 640px;
+    height: 600px;
     width: 100%;
     background-color: #102;
     font-family: sans-serif;
@@ -10,34 +12,36 @@ body{
 .box__boxchild{
     text-align: center;
     height: 100px;
-    width: 100px;
-    margin: auto;
-    margin-top: 50px;
+    width: 120px;
+
+    margin-top: 30px;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: coral;
-    
-    transition-property: color; /*DEFINE LA PROPIEDAD PARA SER TRANSICIONADA*/
-    transition-duration: 5s; /*EL TIEMPO QUE TARDA EN TRANSICIONAR*/
     color: coral;/*EL COLOR INICIAL*/
+    
+    transition-property: left; /*DEFINE LA PROPIEDAD PARA MOVER LA CAJA*/
+    transition-duration: 1s; /*EL TIEMPO QUE TARDA EN TRANSICIONAR*/
+    
+    transition-timing-function: cubic-bezier(1,-0.12,.63,1.52); /*ASIGNA EL TIPO DE MOVIMIENTO A LA CAJA*/
+    left: 0;
+    position: relative;
 }
 .boxchild--a{
-    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(1,-0.12,.63,1.52);
 }
 .boxchild--b{
-    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(1,.09,.95,-0.02);
 }
 .boxchild--c{
-    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0,.92,1,.15);
 }
-.boxchild--a:hover{
-    color: #f00;
+.boxchild--d{
+    transition-timing-function: cubic-bezier(.11,1.03,.01,.95);
 }
-.boxchild--b:hover{
-    color: #fffe;
+.box:hover .box__boxchild{
+    color: #fff;
+    left: 90%;
 }
 
-.boxchild--c:hover{
-    color: #00f;
-}
