@@ -1,3 +1,43 @@
 body{
-    background-color: #1023;
+    background-color: black;
+}
+.box{
+    height: 640px;
+    width: 100%;
+    background-color: #102;
+    font-family: sans-serif;
+}
+.box__boxchild{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: coral;
+    
+    transition-property: color; /*DEFINE LA PROPIEDAD PARA SER TRANSICIONADA*/
+    transition-duration: 5s; /*EL TIEMPO QUE TARDA EN TRANSICIONAR*/
+    color: coral;/*EL COLOR INICIAL*/
+}
+.boxchild--a{
+    transition-duration: 1s;
+}
+.boxchild--b{
+    transition-duration: 2s;
+}
+.boxchild--c{
+    transition-duration: 5s;
+}
+.boxchild--a:hover{
+    color: #f00;
+}
+.boxchild--b:hover{
+    color: #fffe;
+}
+
+.boxchild--c:hover{
+    color: #00f;
 }
